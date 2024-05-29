@@ -1,0 +1,325 @@
+:root {
+        --mcc-bg-color: #4e0727;
+        --mcc-text-color: #82c8fc;
+        --mcc-hover-color: #00aaff;
+        --mcc-shadow-color: #00aaff;
+        --color1a: #1e2761;
+        --color1b: #408ec6;
+        --color1c: #7a2048;
+        --color2-teal: #20948b;
+        --color2-light-green: #6ab187;
+        --color3-teal-blue: #1995ad;
+        --color3-light-blue: #a1d6e2;
+        --color3-light-gray: #f1f1f2;
+        --color4-deep-navy-blue: #002c54;
+        --color4-bright-red: #c5001a;
+        --color4-pale-pink: #fdf6f6;
+        --color5-cranberry-red: #f52549;
+        --color5-bubblegum-pink: #fa6775;
+        --color6-petal: #f98866;
+        --color6-poppy: #ff420e;
+        --color6-stem: #80bd9e;
+        --color6-spring: #89da59;
+        --color7-mist: #90afc5;
+        --color7-stone: #336b87;
+        --color7-shadow: #2a3132;
+        --color7-autumn-foliage: #763626;
+        --color8-crevice: #46211a;
+        --color8-cloud-shadow: #693d3d;
+        --color8-desert: #ba5536;
+        --color8-red-clay: #a43820;
+        --color9-thunder-cloud: #505160;
+        --color9-waterfall: #68829e;
+        --color9-moss: #aebd38;
+        --color9-meadow: #598234;
+        --color10-deep-aqua: #003b46;
+        --color10-ocean: #07575b;
+        --color10-wave: #66a5ad;
+        --color10-sea-foam: #c4dfe6;
+        --color11-forest-green: #2e4600;
+        --color11-grass-green: #486b00;
+        --color11-lime: #a2c523;
+        --color11-leaf: #dbe85f;
+        --color11-earth: #7d4427;
+        --color12-blue-black: #021c1e;
+        --color12-cadet-blue: #004445;
+        --color12-rain: #2c7873;
+        --color12-greenery: #6fb98f;
+        --color12-woodland: #f6eddf;
+        --color13-sky: #375e97;
+        --color13-sunset: #fb6542;
+        --color13-sunflower: #ffbb00;
+        --color13-grass: #3f681c;
+        --color13-sunrise: #ffda77;
+        --color13-sun: #f9f871;
+        --color13-brightyellow: #ffec27;
+        --color14-blue-pine: #324851;
+        --color14-new-grass: #86ac41;
+        --color14-reflection: #34675c;
+        --color14-mist: #7da3a1;
+        --color14-wood: #e0e4cc;
+        --color15-blue-sky: #4cb5f5;
+        --color15-granite: #b7b8b6;
+        --color15-pine: #34675c;
+        --color15-fields: #b3c100;
+        --color15-sun: #f3ffbf;
+        --color16-overcast: #f1f1f2;
+        --color16-warm-gray: #bcbabe;
+        --color16-ice: #a1d6e2;
+        --color16-glacier-blue: #1995ad;
+        --color17-dark-navy: #011a27;
+        --color17-blueberry: #063852;
+        --color17-tangerine: #f0810f;
+        --color17-daffodil: #e6df44;
+        --color18-eggplant: #50312f;
+        --color18-strawberry: #cb0000;
+        --color18-lemon-lime: #e4ea8c;
+        --color18-basil-green: #3f6c45;
+        --color19-deep-green: #0f1b07;
+        --color19-white: #f2f2f2;
+        --color19-plants: #5c821a;
+        --color19-new-growth: #c6d166;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--color13-sky);
+    color: var(--color13-brightyellow); 
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+  
+  }
+
+  .navbar 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+
+  .logo {
+    display: block;
+    margin: 0;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0.95rem var(--color13-sun);  
+  }
+
+
+  .logo:hover {
+    transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+    outline: 1px solid var(--color13-sunrise);
+    /* outline: 1px solid var(--color10-sea-foam); */
+    outline-offset: 0.25rem;
+  }
+  .navbar-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    color: var(--color13-sun);
+    color: var(--color10-sea-foam);
+
+  } 
+  .navbar-text:hover {
+    color: var(--color13-sun);
+    text-shadow: 0 0 0.05rem var(--color13-sunrise);
+    text-decoration: underline;
+  } 
+
+
+  
+  .new-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem; 
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  
+  .btn {
+    background: var(--color10-ocean);
+    color: var(--color10-sea-foam);
+    border: 1px solid var(--color13-sunrise);
+    padding: 0.25em 0.5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    outline: none;
+ 
+    --color10-deep-aqua: #003b46;
+    --color10-ocean: #07575b;
+    --color10-wave: #66a5ad;
+    --color10-sea-foam: #c4dfe6;
+}
+.span-edit {
+    width: 100%;
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    color: var(--color10-sea-foam);
+    background-color: #ba5536;  
+}
+
+  
+  .btn:hover,
+  .btn:focus-visible {
+    background: var(--color10-deep-aqua);
+  }
+  .buttons {
+    display: flex;
+    gap: 0.15rem;
+  }
+
+  .btn.btn-danger {
+    background: var(--color10-ocean);
+    border: 1px solid var(--color5-bubblegum-pink);
+    color: var(--color10-sea-foam);
+    display:inline-flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+
+    
+}
+  
+  .btn.btn-danger:hover,
+  .btn.btn-danger:focus-visible {
+    background: hsl(0, 100%, 40%, 0.2);
+    background: var(--color5-bubblegum-pink);
+    background: var(--color5-cranberry-red);
+    color: white;
+  }
+  
+  .new-item-form input {
+    outline: none;
+    border: 1px solid hsl(200, 100%, 40%);
+    background: var(--color10-deep-aqua);
+
+    color: var(--color13-sun);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+  }
+  
+  .new-item-form input:focus {
+    border: 1px solid var(--color13-sunrise);
+  }
+  
+  .header {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: double underline;
+    width: 100%;
+}
+  
+  .list {
+    margin: 0;
+    padding: 0;
+    margin-left: .1rem;
+    list-style: none;
+  }
+  
+  .list li:has(input:checked) label {
+      color: var(--color11-lime);
+      color: hsl(200, 20%, 40%);
+      color: var(--color15-sun);
+      color: var(--color14-mist);
+
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .list li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .list li label {
+    display: flex;
+    gap: 0.25rem;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .list li:has(input:focus-visible) label {
+    outline: 1px solid hsl(200, 100%, 50%);
+    outline: 1px solid red;
+
+  }
+  
+  .list li input {
+    outline: none;
+    width: 0;
+    height: 0;
+    appearance: none;
+    pointer-events: none;
+    position: absolute;
+  }
+  
+  .list li label::before {
+    content: "";
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: var(--color15-blue-sky);
+    background: var(--color10-wave);
+    color: var(--color15-sun);
+    border-radius: 0.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list li label:hover::before {
+    background: hsl(200, 100%, 80%);
+    background: var(--color15-granite);
+    
+    background: var(--color5-cranberry-red);
+    background: var(--color15-blue-sky);
+    
+}
+  
+  .list li:has(input:checked) label::before {
+    content: "✔";
+    background: var(--color13-grass);
+    color: hsl(200, 100%, 90%);
+    color: var(--color15-sun);
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .list li:has(input:checked) label:hover::before {
+    background: var(--color13-grass);
+    background: var(--color18-strawberry);
+    background: var(--color5-cranberry-red);    
+    background: var(--color15-blue-sky);
+
+  }
+
+  .list-no-items {
+    font-size: 1.1rem;
+    color: var(--color13-sunrise);
+    color: var(--color15-sun);
+    text-align: center;
+    text-indent: 0.5rem;
+    font-style: italic;
+  }

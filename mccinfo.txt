@@ -1,0 +1,7 @@
+1. $ npm create vite@latest
+2. Choose react and JS+SWC
+3. $ npm i 
+4. $ npm run dev
+5. - $ npm init -y 
+6. - $ npm install react react-dom react-scripts 
+7. 
