@@ -26,10 +26,6 @@ The MCC Todo List App is a simple yet powerful todo list application built with 
 
 **Vite**: A fast development build tool that leverages native ES modules. Vite is known for its rapid build times and modern feature set. It provides:
 
-- **Instant Server Start**: With on-demand file serving over native ESM, Vite starts the dev server in milliseconds.
-- **Lightning Fast HMR**: Hot Module Replacement (HMR) that stays fast regardless of app size.
-- **Rich Features**: Out of the box support for TypeScript, JSX, CSS and more.
-
 ### React Hooks
 
 #### useState
